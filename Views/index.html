@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cajero</title>
+    <link rel="stylesheet" href="../Assets/style.css" />
+    <link rel="icon" href="../imgs/icon.svg" />
+    <link rel="stylesheet" href="../Assets/progress.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="text">Seleccione su cuenta:</p>
+      <div class="counts">
+        <button class="button count">Juan Perez</button>
+        <button class="button count">Maria Lopez</button>
+        <button class="button count">Pedro Rodriguez</button>
+        <button class="button count">Luisa Martinez</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="text saldo">
+        Tu saldo es de: <br /><b class="saldo-personal"></b>
+      </p>
+      <div class="action-container">
+        <button class="button depositar-btn">Depositar</button>
+        <button class="button transferir-btn">Transferir</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="depositar">
+        <h2>DEPOSITAR</h2>
+        <p class="peticionD">
+          Por favor escribe la cantidad de dinero que deseas depositar
+        </p>
+      </div>
+      <div class="transferir">
+        <h2>TRANSFERIR</h2>
+        <p class="peticionT">
+          Por favor elije a la persona que le deseas transferir y la cantidad de
+          dinero que se enviará
+        </p>
+        <div class="nombre-transferencia">
+          <div>
+            <label for="opcion1"
+              ><input type="radio" name="persona" id="opcion1" />Juan
+              Perez</label
+            >
+          </div>
+          <div>
+            <label for="opcion2"
+              ><input type="radio" name="persona" id="opcion2" />Maria
+              Lopez</label
+            >
+          </div>
+          <div>
+            <label for="opcion3"
+              ><input type="radio" name="persona" id="opcion3" />Pedro
+              Rodriguez</label
+            >
+          </div>
+          <div>
+            <label for="opcion4"
+              ><input type="radio" name="persona" id="opcion4" />Luisa
+              Martinez</label
+            >
+          </div>
+        </div>
+      </div>
+      <input class="monto" type="number" placeholder="Ingresar monto" />
+    </div>
+
+    <div class="container">
+      <div class="transferencia2">
+        <p>La transferencia a <span></span> de <span>$</span> fue exitosa</p>
+      </div>
+      <div class="deposito2">
+        <p>El deposito de <span>$</span> fue exitoso</p>
+      </div>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="circle active">1</div>
+        <div class="circle">2</div>
+        <div class="circle">3</div>
+        <div class="circle">4</div>
+      </div>
+
+      <button class="btn" id="prev" disabled>Prev</button>
+      <button class="btn" id="next" disabled>Next</button>
+    </div>
+    <script src="../JS/index.js"></script>
+    <script src="../JS/progress.js"></script>
+  </body>
+</html>

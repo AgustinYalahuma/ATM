@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background: rgb(108, 108, 108);
+  background: radial-gradient(
+    circle,
+    rgb(108, 108, 108) 0%,
+    rgba(157, 157, 157, 1) 100%
+  );
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container {
+  display: none;
+  text-align: center;
+  min-height: 200px;
+  width: 500px;
+  background-color: #aaa;
+  border-radius: 15px;
+  padding: 20px;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container.activo {
+  display: flex;
+}
+.text {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+.counts,
+.nombre-transferencia {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.nombre-transferencia {
+  gap: 10px 0px;
+}
+
+.button {
+  flex-basis: calc(50% - 5px);
+  border: none;
+  background-color: #808080;
+  padding: 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover,
+.button.activo {
+  background-color: rgb(77, 77, 77);
+  color: #cccccc;
+}
+
+.datos-cuenta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.action-container {
+  display: flex;
+  height: 54px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.action-container .button {
+  flex-basis: calc(50% - 5px);
+  padding: 10px;
+}
+.monto::-webkit-inner-spin-button,
+.monto::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.monto {
+  background-color: #858585;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+.depositar,
+.transferir {
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+}
+/* .nombre-transferencia {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+} */
+.nombre-transferencia div {
+  text-indent: 3em;
+  text-align: left;
+  flex: 1 0 50%;
+}
+
+.nombre-transferencia input {
+  margin-right: 1em;
+}
