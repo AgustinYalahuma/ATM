@@ -95,7 +95,7 @@ body {
   font-size: 1.5em;
   border: none;
   outline: none;
-  border-radius: 10px;
+  border-radius: 7px;
 }
 .depositar,
 .transferir {
@@ -116,4 +116,14 @@ body {
 
 .nombre-transferencia input {
   margin-right: 1em;
+}
+
+.action-dinero {
+  display: flex;
+  gap: 10px;
+}
+
+.action-dinero .confirm {
+  flex-basis: 20%;
+  color: #fff;
 }
